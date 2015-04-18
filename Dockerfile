@@ -21,7 +21,7 @@ RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
 ### install java ###
 
 # download && install java
-RUN wget --progress=bar --no-check-certificate \
+RUN wget --no-check-certificate \
     -O /tmp/jdk.tar.gz \
     --header "Cookie: oraclelicense=a" \
     http://download.oracle.com/otn-pub/java/jdk/8u31-b13/jdk-8u31-linux-x64.tar.gz && \
